@@ -64,7 +64,7 @@ export function ContactInfo() {
             </div>
           </div>
 
-          <div className="mt-16 text-center">
+          {/* <div className="mt-16 text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Connect with us</h3>
             <div className="flex justify-center gap-4">
               <a 
@@ -80,7 +80,7 @@ export function ContactInfo() {
                 <Twitter className="h-5 w-5 text-emerald-600 group-hover:text-white" />
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import { ArrowRight, CheckCircle2, TrendingUp } from 'lucide-react';
 import { Button } from './ui/button';
+import { Link } from 'react-router';
 
 export function FundingGap() {
   const benefits = [
@@ -97,13 +98,16 @@ export function FundingGap() {
                 ))}
               </div>
 
-              <Button 
-                size="lg" 
-                className="bg-white/10 backdrop-blur-sm border-2 border-white/20 text-white hover:bg-white/20 hover:border-white/30 shadow-lg"
+              {/* <Button
+                asChild
+                size="lg"
+                className="group h-auto rounded-2xl border-2 border-white/20 bg-white/10 px-7 py-4 text-base font-semibold text-white shadow-[0_18px_40px_-20px_rgba(15,23,42,0.85)] backdrop-blur-xl transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/18 hover:border-white/35"
               >
-                Learn More
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+                <Link to="/about">
+                  <span>Explore Opportunities</span>
+                  <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+                </Link>
+              </Button> */}
             </div>
           </div>
         </div>

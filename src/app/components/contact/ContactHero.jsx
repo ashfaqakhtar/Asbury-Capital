@@ -34,7 +34,7 @@ export function ContactHero() {
           </div>
           
           {/* Glass Contact Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="group relative">
               {/* Glow effect */}
               <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-3xl blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-500" />
@@ -48,7 +48,7 @@ export function ContactHero() {
                   </div>
                 </div>
                 <div className="text-sm text-gray-300 mb-2 font-medium">Email us</div>
-                <div className="text-white font-semibold text-lg">info@asburycredit.com</div>
+                <div className="text-white font-semibold text-lg">info@asburycreditpartners.com</div>
               </div>
             </div>
             
@@ -65,7 +65,7 @@ export function ContactHero() {
                   </div>
                 </div>
                 <div className="text-sm text-gray-300 mb-2 font-medium">Call us</div>
-                <div className="text-white font-semibold text-lg">1-800-ASBURY</div>
+                <div className="text-white font-semibold text-lg">509-669-1105</div>
               </div>
             </div>
             
@@ -74,7 +74,7 @@ export function ContactHero() {
               <div className="absolute -inset-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-3xl blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-500" />
               
               {/* Glass card */}
-              <div className="relative bg-white/10 backdrop-blur-xl border border-white/20 p-8 rounded-3xl hover:bg-white/15 transition-all duration-500 hover:-translate-y-2 h-full text-center">
+              {/* <div className="relative bg-white/10 backdrop-blur-xl border border-white/20 p-8 rounded-3xl hover:bg-white/15 transition-all duration-500 hover:-translate-y-2 h-full text-center">
                 <div className="relative mb-6 inline-block">
                   <div className="absolute inset-0 bg-purple-500 rounded-2xl blur-lg opacity-40" />
                   <div className="relative w-16 h-16 rounded-2xl bg-purple-500/20 backdrop-blur-sm border border-purple-400/30 flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-500">
@@ -83,7 +83,7 @@ export function ContactHero() {
                 </div>
                 <div className="text-sm text-gray-300 mb-2 font-medium">Live chat</div>
                 <div className="text-white font-semibold text-lg">Available 24/7</div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

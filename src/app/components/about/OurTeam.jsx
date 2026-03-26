@@ -4,13 +4,13 @@ import { Button } from '../ui/button';
 import { Link } from 'react-router';
 
 const davidKingImage =
-  'https://occamsadvisory.com/uploads/authors/author-2/rwRhKt2mld7vSxEpyzpLkhrFz34ALYQpUqd2ezfm.webp';
+  '/images/Aubury_Devid.jpg';
 
 export function OurTeam() {
   const teamMembers = [
     {
-      name: 'Devid King',
-      title: 'DEPUTY CEO',
+      name: 'David King',
+      // title: 'DEPUTY CEO',
       description: 'Strategic leadership and operational excellence driving organizational growth',
       image: davidKingImage,
       bioLink: '/bio/david-king'
@@ -44,7 +44,7 @@ export function OurTeam() {
                   <ImageWithFallback
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-300"
+                    className="w-full h-full object-cover  group-hover:grayscale-0 group-hover:scale-105 transition-all duration-300"
                   />
                 </div>
                 <div className="p-6">
@@ -53,14 +53,14 @@ export function OurTeam() {
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">{member.name}</h3>
                   <p className="text-sm text-gray-600 mb-4">{member.description}</p>
-                  <div className="flex gap-2 mb-4">
+                  {/* <div className="flex gap-2 mb-4">
                     <Button variant="ghost" size="sm" className="h-8 w-8 p-0">
                       <Linkedin className="h-4 w-4 text-gray-600" />
                     </Button>
                     <Button variant="ghost" size="sm" className="h-8 w-8 p-0">
                       <Mail className="h-4 w-4 text-gray-600" />
                     </Button>
-                  </div>
+                  </div> */}
                   {member.bioLink && (
                     <Link to={member.bioLink}>
                       <Button className="w-full bg-gradient-to-r from-emerald-600 to-blue-600 hover:from-emerald-700 hover:to-blue-700 text-white text-sm font-medium shadow-lg shadow-emerald-500/20">

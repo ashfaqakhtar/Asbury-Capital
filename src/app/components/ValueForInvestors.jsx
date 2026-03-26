@@ -1,5 +1,6 @@
 import { Shield, Target, BarChart3, Coins, CheckCircle2, ArrowRight } from 'lucide-react';
 import { Button } from './ui/button';
+import { Link } from 'react-router';
 
 export function ValueForInvestors() {
   const features = [
@@ -106,9 +107,15 @@ export function ValueForInvestors() {
                   </div>
                   <div className="text-gray-600 text-lg">Average annual returns</div>
                 </div>
-                <Button size="lg" className="bg-gradient-to-r from-emerald-600 to-blue-600 hover:from-emerald-700 hover:to-blue-700 text-white shadow-lg shadow-emerald-500/50">
-                  Explore Opportunities
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                <Button
+                  asChild
+                  size="lg"
+                  className="group h-auto rounded-2xl border-0 bg-gradient-to-r from-emerald-600 via-teal-600 to-blue-600 px-8 py-4 text-base font-semibold text-white shadow-[0_20px_40px_-18px_rgba(16,185,129,0.7)] transition-all duration-300 hover:-translate-y-0.5 hover:from-emerald-700 hover:via-teal-700 hover:to-blue-700 hover:shadow-[0_24px_48px_-20px_rgba(37,99,235,0.55)]"
+                >
+                  <Link to="/about">
+                    <span>Explore Opportunities</span>
+                    <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+                  </Link>
                 </Button>
               </div>
             </div>

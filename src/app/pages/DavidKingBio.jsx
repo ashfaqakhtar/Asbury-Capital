@@ -7,7 +7,7 @@ import { Button } from '../components/ui/button';
 import { Link } from 'react-router';
 
 const davidKingImage =
-  'https://occamsadvisory.com/uploads/authors/author-2/rwRhKt2mld7vSxEpyzpLkhrFz34ALYQpUqd2ezfm.webp';
+  '/images/Aubury_Devid.jpg';
 
 export default function DavidKingBio() {
   return (

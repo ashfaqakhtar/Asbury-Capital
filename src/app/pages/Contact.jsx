@@ -12,15 +12,15 @@ export default function Contact() {
       <Header />
       <main>
         <ContactHero />
-        <ScrollReveal>
+        {/* <ScrollReveal>
           <ContactForm />
-        </ScrollReveal>
-        <ScrollReveal>
+        </ScrollReveal> */}
+        {/* <ScrollReveal>
           <ContactInfo />
-        </ScrollReveal>
-        <ScrollReveal>
+        </ScrollReveal> */}
+        {/* <ScrollReveal>
           <OfficeLocations />
-        </ScrollReveal>
+        </ScrollReveal> */}
       </main>
       <Footer />
     </div>

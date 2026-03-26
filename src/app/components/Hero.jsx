@@ -1,5 +1,7 @@
 import { ArrowRight, TrendingUp, Shield, Zap } from 'lucide-react';
 import { Button } from './ui/button';
+import { Link } from 'react-router';
+import React from 'react';
 
 export function Hero() {
   return (
@@ -41,12 +43,23 @@ export function Hero() {
             </p>
             
             <div className="flex flex-col sm:flex-row items-start gap-4 pt-4">
-              <Button size="lg" className="bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white text-lg px-8 shadow-lg shadow-emerald-500/50 border-0">
-                Get Started
-                <ArrowRight className="ml-2 h-5 w-5" />
+              <Button
+                asChild
+                size="lg"
+                className="group rounded-2xl border-0 bg-gradient-to-r from-emerald-500 to-emerald-600 px-8 text-lg text-white shadow-lg shadow-emerald-500/50 hover:-translate-y-0.5 hover:from-emerald-600 hover:to-emerald-700"
+              >
+                <Link to="/contact">
+                  <span>Get Started</span>
+                  <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+                </Link>
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 border-2 border-white/20 bg-white/5 backdrop-blur-sm text-white hover:bg-white/10">
-                Learn More
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="rounded-2xl border-2 border-white/20 bg-white/5 px-8 text-lg text-white backdrop-blur-sm hover:bg-white/10 hover:text-white"
+              >
+                <Link to="/about">Learn More</Link>
               </Button>
             </div>
           </div>
